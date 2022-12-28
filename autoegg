@@ -1,0 +1,15 @@
+_G.AutoEgg = false
+
+spawn(function()
+    while _G.AutoEgg == true do
+local A_1 = 
+{
+	["eggName"] = "Egg 17", 
+	["auto"] = false, 
+	["amount"] = 2
+}
+local Event = game:GetService("ReplicatedStorage").Packages.Knit.Services.EggService.RF.BuyEgg
+Event:InvokeServer(A_1)
+        wait()
+end
+    end)
